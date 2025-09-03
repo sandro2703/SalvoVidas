@@ -2,19 +2,24 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SalvoVidas – Ecossistema Digital da Saúde Cardiovascular</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-  <button class="menu-toggle" aria-label="Abrir menu">
-  ☰
-</button>
 <body>
 
-  <!-- Cabeçalho com logo e menu -->
+  <!-- Cabeçalho com logo, botão de menu e navegação -->
   <header class="site-header">
     <div class="container">
-      <img src="assets/img/logo.png" alt="Logomarca SalvoVidas" class="logo">
+      <a href="index.html" class="logo">
+        <img src="assets/img/logo.png" alt="Logomarca SalvoVidas">
+      </a>
+
+      <!-- Botão para abrir/fechar o menu em mobile -->
+      <button class="menu-toggle" aria-label="Abrir menu">
+        ☰
+      </button>
+
       <nav class="main-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -35,20 +40,24 @@
     <div class="container">
       <h1>Transformando saúde cardiovascular em impacto social</h1>
       <p>App móvel + Dashboard Web + Gamificação com propósito social</p>
-      <a href="https://play.google.com/store/apps/details?id=com.salvovidas" class="btn-primary">Baixar App</a>
+      <a href="https://play.google.com/store/apps/details?id=com.salvovidas" class="btn-primary">
+        Baixar App
+      </a>
     </div>
   </section>
 
   <!-- Seções resumidas do plano de negócios -->
   <main class="container">
 
-    <!-- 1. Sumário Executivo -->
     <section id="sumario-executivo">
       <h2>Sumário Executivo</h2>
-      <p>SalvoVidas é um ecossistema digital inovador, com app móvel e dashboard web, que propõe caminhadas gamificadas, lembretes clínicos e rewards sociais via “Prática Fraterna”. Público-alvo: 45–65 anos com hipertensão em Sorocaba/SP. Modelo freemium + parcerias B2B2C.</p>
+      <p>
+        SalvoVidas é um ecossistema digital inovador, com app móvel e dashboard web, que propõe 
+        caminhadas gamificadas, lembretes clínicos e rewards sociais via “Prática Fraterna”. 
+        Público-alvo: 45–65 anos com hipertensão em Sorocaba/SP. Modelo freemium + parcerias B2B2C.
+      </p>
     </section>
 
-    <!-- 2. Descritivo dos Serviços -->
     <section id="descritivo-servicos">
       <h2>Principais Funcionalidades</h2>
       <ul>
@@ -60,17 +69,21 @@
       </ul>
     </section>
 
-    <!-- 3. Mercado Consumidor -->
     <section id="mercado-alvo">
       <h2>Mercado Consumidor</h2>
-      <p>Em Sorocaba (829 000 hab.), 195 000 têm entre 45–65 anos; 30% com DCV → 58 000 usuários potenciais.</p>
+      <p>
+        Em Sorocaba (829 000 hab.), 195 000 têm entre 45–65 anos; 30% com DCV → 
+        58 000 usuários potenciais.
+      </p>
       <a href="mercado.html" class="btn-secondary">Saiba Mais</a>
     </section>
 
-    <!-- 4. Sustentabilidade -->
     <section id="sustentabilidade">
       <h2>Sustentabilidade</h2>
-      <p>Alinhado aos ODS 3, 11 e 17. Impacto social: “Prática Fraterna” apoia ONGs locais. Economia: parcerias que geram empregos. Ambiental: mobilidade sustentável.</p>
+      <p>
+        Alinhado aos ODS 3, 11 e 17. Impacto social: “Prática Fraterna” apoia ONGs locais. 
+        Economia: parcerias que geram empregos. Ambiental: mobilidade sustentável.
+      </p>
       <a href="sustentabilidade.html" class="btn-secondary">Detalhes</a>
     </section>
 
@@ -84,6 +97,8 @@
     </div>
   </footer>
 
+  <!-- Script para menu mobile -->
+  <script src="assets/js/main.js"></script>
+
 </body>
 </html>
-
