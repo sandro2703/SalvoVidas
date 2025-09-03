@@ -1,94 +1,79 @@
-/* Variáveis de cor */
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+/* Variáveis de cor e reset */
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
 :root {
   --primary: #d00000;
-  --dark: #333;
-  --light: #f8f8f8;
+  --dark:   #333;
+  --light:  #f8f8f8;
 }
-/* Reset e tipografia */
-* { margin: 0; padding: 0; box-sizing: border-box; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   color: var(--dark);
   background: var(--light);
   line-height: 1.6;
 }
-a { text-decoration: none; color: inherit; }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
 /* Container centralizado */
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
 .container {
   width: 90%;
   max-width: 960px;
   margin: 0 auto;
 }
 
-/* Reset básico */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
-
-/* Container centralizado */
-.container { width: 90%; max-width: 960px; margin: 0 auto; }
-
-/* Cabeçalho */
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+/* Cabeçalho e Navegação */
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
 .site-header {
   background: #000;
   padding: 15px 0;
+  position: relative;
 }
-.logo { max-width: 180px; vertical-align: middle; }
-.main-nav ul {
-  list-style: none;
+
+.site-header .logo img {
+  max-width: 140px;
+  vertical-align: middle;
+}
+
+.main-nav {
   display: inline-block;
   vertical-align: middle;
   margin-left: 40px;
 }
-.main-nav ul li { display: inline; margin-right: 20px; }
+
+.main-nav ul {
+  list-style: none;
+}
+
+.main-nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
 .main-nav ul li a {
   color: #fff;
-  text-decoration: none;
   font-weight: bold;
+  transition: opacity .2s;
 }
 
-/* Hero */
-.hero {
-  background: url('../img/hero-bg.jpg') center/cover no-repeat;
-  color: #fff;
-  text-align: center;
-  padding: 100px 0;
-}
-.hero h1 { font-size: 2.5rem; margin-bottom: 20px; }
-.hero p { font-size: 1.2rem; margin-bottom: 30px; }
-.btn-primary {
-  background: #d00000;
-  color: #fff;
-  padding: 12px 30px;
-  text-decoration: none;
-  border-radius: 4px;
+.main-nav ul li a:hover {
+  opacity: .7;
 }
 
-/* Seções do main */
-main section {
-  padding: 60px 0;
-  border-bottom: 1px solid #eee;
-}
-main h2 { margin-bottom: 15px; color: #d00000; }
-btn-secondary {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 8px 20px;
-  background: #444;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-}
-
-/* Rodapé */
-.site-footer {
-  text-align: center;
-  padding: 30px 0;
-  background: #f1f1f1;
-  font-size: 0.9rem;
-}
-.site-footer a { color: #d00000; text-decoration: none; }
-/* escondendo o menu-toggle em desktop */
+/* Botão de menu hamburguer (oculto no desktop) */
 .menu-toggle {
   display: none;
   background: transparent;
@@ -96,27 +81,124 @@ btn-secondary {
   font-size: 1.8rem;
   color: #fff;
   cursor: pointer;
+  vertical-align: middle;
+  margin-left: 20px;
 }
-/* responsividade para telas até 768px */
+
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+/* Hero Section */
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.hero {
+  /* Se não tiver imagem, troque por background: var(--primary); */
+  background: url('../img/hero-bg.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  opacity: .9;
+}
+
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+/* Seções do main */
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+main section {
+  padding: 60px 0;
+  border-bottom: 1px solid #eee;
+}
+
+main h2 {
+  margin-bottom: 15px;
+  color: var(--primary);
+}
+
+main ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+main ul li::before {
+  content: "• ";
+  color: var(--primary);
+}
+
+.btn-secondary {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 20px;
+  background: var(--dark);
+  color: #fff;
+  border-radius: 4px;
+  font-size: .9rem;
+}
+
+.btn-secondary:hover {
+  opacity: .8;
+}
+
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+/* Rodapé */
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.site-footer {
+  background: #f1f1f1;
+  text-align: center;
+  padding: 30px 0;
+  font-size: .9rem;
+}
+
+.site-footer a {
+  color: var(--primary);
+}
+
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+/* Responsividade até 768px */
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
 @media (max-width: 768px) {
-  .main-nav ul {
-    display: none;
-    flex-direction: column;
-    background: #000;
+
+  /* Mostra botão, esconde menu padrão */
+  .menu-toggle {
+    display: inline-block;
+  }
+
+  .main-nav {
     position: absolute;
     top: 60px;
     left: 0;
     width: 100%;
   }
-  .main-nav ul li {
-    margin: 10px 0;
-    text-align: center;
+
+  .main-nav ul {
+    display: none;
+    flex-direction: column;
+    background: #000;
   }
-  .menu-toggle {
-    display: inline-block;
-  }
+
   .main-nav.open ul {
     display: flex;
+    text-align: center;
+  }
+
+  .main-nav ul li {
+    display: block;
+    margin: 10px 0;
   }
 }
-
