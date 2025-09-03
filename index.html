@@ -1,47 +1,86 @@
-<!DOCTYPE html><html lang="pt-BR"><head><title>SalvoVidas - Início</title>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-</head><body>
-  <link rel="stylesheet" href="style.css">
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="nav-logo">
-        <a href="index.html"><img src="logo.png" alt="Logomarca Salvo Vidas" style="max-width: 300px; height: auto; display: block; margin: 40px auto;">
-      </div>
-      <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-menu">
-        <li><a href="index.html">Início</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="servicos.html">Serviços</a></li>
-        <li><a href="mercado.html">Mercado</a></li>
-        <li><a href="operacao.html">Operação</a></li>
-        <li><a href="sustentabilidade.html">Sustentabilidade</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </div>
-  </nav>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SalvoVidas – Ecossistema Digital da Saúde Cardiovascular</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
 
-    <section class="hero"><div class="hero-container"><div class="hero-content">
-    <img src="assets/img/logo.png" class="hero-logo"><h1>SalvoVidas</h1><h2>Ecossistema Digital da Saúde Cardiovascular</h2>
-    <p>#fazbemprocoração</p>
-    <div class="hero-buttons"><a href="sobre.html" class="btn btn-primary">Saiba Mais</a>
-    <a href="servicos.html" class="btn btn-secondary">Conhecer Serviços</a></div>
-    </div></div></section>
-    <section class="section"><div class="container"><h2>Participe</h2>
-    <a href="https://chat.whatsapp.com/J3CBY1xTjY973ybgJZPWrv" class="btn btn-primary">WhatsApp</a>
-    <a href="https://www.facebook.com/profile.php?id=61578970256321" class="btn btn-secondary">Facebook</a>
-    <a href="https://prototipo.smartcreativedigital.com/salvo-vidas/" class="btn btn-outline">Testar MVP</a></div></section>
-  <footer class="footer">
+  <!-- Cabeçalho com logo e menu -->
+  <header class="site-header">
     <div class="container">
-      <img src="assets/img/logo.png" alt="Logo Salvo Vidas" class="footer-logo">
-      <p class="footer-tagline">#fazbemprocoração</p>
-      <p class="footer-text">Transformando saúde cardiovascular em impacto social</p>
+      <img src="assets/img/logo.png" alt="Logomarca SalvoVidas" class="logo">
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="sustentabilidade.html">Sustentabilidade</a></li>
+          <li><a href="mercado.html">Mercado</a></li>
+          <li><a href="operacao.html">Operação</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="plano-negocios.pdf" target="_blank">Plano de Negócios</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Transformando saúde cardiovascular em impacto social</h1>
+      <p>App móvel + Dashboard Web + Gamificação com propósito social</p>
+      <a href="https://play.google.com/store/apps/details?id=com.salvovidas" class="btn-primary">Baixar App</a>
+    </div>
+  </section>
+
+  <!-- Seções resumidas do plano de negócios -->
+  <main class="container">
+
+    <!-- 1. Sumário Executivo -->
+    <section id="sumario-executivo">
+      <h2>Sumário Executivo</h2>
+      <p>SalvoVidas é um ecossistema digital inovador, com app móvel e dashboard web, que propõe caminhadas gamificadas, lembretes clínicos e rewards sociais via “Prática Fraterna”. Público-alvo: 45–65 anos com hipertensão em Sorocaba/SP. Modelo freemium + parcerias B2B2C.</p>
+    </section>
+
+    <!-- 2. Descritivo dos Serviços -->
+    <section id="descritivo-servicos">
+      <h2>Principais Funcionalidades</h2>
+      <ul>
+        <li>Monitoramento de passos e gamificação de metas</li>
+        <li>Lembretes de consultas e medicação</li>
+        <li>Recompensas reais em farmácias e comércios</li>
+        <li>“Prática Fraterna”: pontos convertidos em doações a ONGs</li>
+        <li>Dashboard para profissionais definirem metas e acompanharem</li>
+      </ul>
+    </section>
+
+    <!-- 3. Mercado Consumidor -->
+    <section id="mercado-alvo">
+      <h2>Mercado Consumidor</h2>
+      <p>Em Sorocaba (829 000 hab.), 195 000 têm entre 45–65 anos; 30% com DCV → 58 000 usuários potenciais.</p>
+      <a href="mercado.html" class="btn-secondary">Saiba Mais</a>
+    </section>
+
+    <!-- 4. Sustentabilidade -->
+    <section id="sustentabilidade">
+      <h2>Sustentabilidade</h2>
+      <p>Alinhado aos ODS 3, 11 e 17. Impacto social: “Prática Fraterna” apoia ONGs locais. Economia: parcerias que geram empregos. Ambiental: mobilidade sustentável.</p>
+      <a href="sustentabilidade.html" class="btn-secondary">Detalhes</a>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 SalvoVidas – Todos os direitos reservados.</p>
+      <p><a href="plano-negocios.pdf" target="_blank">Download do Plano de Negócios (PDF)</a></p>
     </div>
   </footer>
-  <script src="js/script.js"></script>
-</body></html>
+
+</body>
+</html>
+
