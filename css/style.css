@@ -88,3 +88,35 @@ btn-secondary {
   font-size: 0.9rem;
 }
 .site-footer a { color: #d00000; text-decoration: none; }
+/* escondendo o menu-toggle em desktop */
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+/* responsividade para telas até 768px */
+@media (max-width: 768px) {
+  .main-nav ul {
+    display: none;
+    flex-direction: column;
+    background: #000;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+  }
+  .main-nav ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+  .menu-toggle {
+    display: inline-block;
+  }
+  .main-nav.open ul {
+    display: flex;
+  }
+}
+
