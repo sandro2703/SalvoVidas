@@ -1,1 +1,5 @@
-document.addEventListener('DOMContentLoaded',()=>{const h=document.querySelector('.hamburger');const m=document.querySelector('.nav-menu');if(h){h.addEventListener('click',()=>m.classList.toggle('show'));}});
+document.querySelector('.menu-toggle')
+  .addEventListener('click', () => {
+    document.querySelector('.main-nav')
+      .classList.toggle('open');
+  });
