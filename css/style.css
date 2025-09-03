@@ -1,1 +1,104 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background: #004466;
+  color: #fff;
+  padding: 10px 20px;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo img {
+  height: 40px;
+}
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+.nav-menu li a.active {
+  border-bottom: 2px solid #fff;
+}
+
+/* Hero */
+.hero {
+  background: #eaf6f6;
+  text-align: center;
+  padding: 50px 20px;
+}
+.hero-logo {
+  max-width: 120px;
+  margin-bottom: 20px;
+}
+
+/* Botões */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 5px;
+}
+.btn-primary {
+  background: #008080;
+  color: white;
+}
+.btn-secondary {
+  background: #004466;
+  color: white;
+}
+.btn-outline {
+  border: 2px solid #008080;
+  color: #008080;
+}
+
+/* Seções */
+.section {
+  padding: 40px 20px;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Footer */
+.footer {
+  background: #004466;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.footer-logo {
+  max-width: 80px;
+}
+
+/* Menu responsivo */
+.hamburger {
+  display: none;
+}
+@media(max-width:768px){
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background: #004466;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+  }
+  .nav-menu.show {
+    display: fle
 
