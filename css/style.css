@@ -1,3 +1,26 @@
+/* Variáveis de cor */
+:root {
+  --primary: #d00000;
+  --dark: #333;
+  --light: #f8f8f8;
+}
+/* Reset e tipografia */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: Arial, sans-serif;
+  color: var(--dark);
+  background: var(--light);
+  line-height: 1.6;
+}
+a { text-decoration: none; color: inherit; }
+
+/* Container centralizado */
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 /* Reset básico */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
